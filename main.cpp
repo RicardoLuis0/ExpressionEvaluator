@@ -1,13 +1,13 @@
 #include <iostream>
-#include <cstdio>
+#include <cstdlib>
+
 #include "Eval.h"
 
-using namespace std;
-
 int main(){
-    std::string expr="2+2";
+    std::string expr;
     std::cout<<"expression to evaluate: ";
     std::cin>>expr;
-    cout <<expr<<"="<<fixed<<Eval::do_eval(expr);
+    std::cout<<std::fixed<<expr<<"="<<Eval::do_eval(expr)<<"\n";
+    system("pause");
     return 0;
 }

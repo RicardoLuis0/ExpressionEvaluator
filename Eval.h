@@ -22,8 +22,6 @@ class Eval{
           * type 0 is (double) number
           * type 1 is (long) operator
           * type 2 is open bracket
-          *
-          *
           */
         struct operation{
             int weight;
