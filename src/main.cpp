@@ -5,10 +5,10 @@
 
 int main(){
     std::string expr;
-    //std::cout<<"expression to evaluate: ";
+    std::cout<<"expression to evaluate: ";
     std::cin>>expr;
     system("cls");
-    std::cout<<std::fixed<<expr<<"="<<Eval::do_eval(expr)<<"\n";
+    std::cout<<std::fixed<<expr<<"="<<Eval(expr).eval()<<"\n";
     system("pause");
     return 0;
 }
